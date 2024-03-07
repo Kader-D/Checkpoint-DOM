@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier d'Achat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js">defer</script>
+</head>
+<body>
+
+    <div id="cart">
+        <div class="item" data-price="25">
+            <img src="articles/article1.png" alt="article 1">
+            <span>Article 1</span>
+            <button onclick="adjustQuantity(this, -1)">-</button>
+            <span class="quantity">1</span>
+            <button onclick="adjustQuantity(this, 1)">+</button>
+            <button class="like" onclick="toggleLike(this)">❤️</button>
+            <span class="price">25fcfa</span>
+            <button onclick="removeItem(this)">Supprimer</button>
+        </div>
+        <div class="item" data-price="30">
+            <img src="articles/article2.png" alt="article 2">
+            <span>Article 2</span>
+            <button onclick="adjustQuantity(this, -1)">-</button>
+            <span class="quantity">1</span>
+            <button onclick="adjustQuantity(this, 1)">+</button>
+            <button class="like" onclick="toggleLike(this)">❤️</button>
+            <span class="price">30fcfa</span>
+            <button onclick="removeItem(this)">Supprimer</button>
+        </div>
+        <div id="total">Total : 55fcfa</div>
+    </div>
+
+</body>
+</html>
